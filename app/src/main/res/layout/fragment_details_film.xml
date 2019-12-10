@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- title, releaseDate -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/default_padding"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/item_title_color"
+        android:textSize="@dimen/title_textSize"/>
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:paddingBottom="@dimen/default_padding"
+        android:layout_alignLeft="@+id/poster"
+        android:text=""
+        android:textSize="@dimen/title_textSize"/>
+
+    <!-- description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/release_date"
+        android:layout_alignLeft="@+id/poster"
+        android:layout_alignRight="@+id/poster"
+        android:paddingBottom="@dimen/default_padding"
+        android:text="description"
+        android:textSize="@dimen/description_textSize"/>
+
+    <!-- poster -->
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="@dimen/poster_width"
+        android:layout_height="@dimen/poster_height"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/description"
+        android:contentDescription="@string/poster" />
+
+    <!-- director -->
+    <TextView
+        android:id="@+id/director_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poster"
+        android:layout_alignLeft="@+id/poster"
+        android:paddingTop="@dimen/default_padding"
+        android:text="@string/director"
+        android:textColor="@color/item_title_color"
+        android:textSize="@dimen/title_textSize" />
+
+    <TextView
+        android:id="@+id/director_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/director_title"
+        android:layout_alignLeft="@+id/poster"
+        android:paddingBottom="@dimen/default_padding"
+        android:text=""
+        android:textSize="@dimen/title_textSize" />
+
+    <!-- producer -->
+    <TextView
+        android:id="@+id/producer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/director_name"
+        android:layout_alignLeft="@+id/poster"
+        android:paddingTop="@dimen/default_padding"
+        android:text="@string/producer"
+        android:textColor="@color/item_title_color"
+        android:textSize="@dimen/title_textSize" />
+
+    <TextView
+        android:id="@+id/producer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/producer_title"
+        android:layout_alignLeft="@+id/poster"
+        android:paddingBottom="@dimen/default_padding"
+        android:text=""
+        android:textSize="@dimen/title_textSize" />
+
+</RelativeLayout>
+
